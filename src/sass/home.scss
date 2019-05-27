@@ -1,0 +1,133 @@
+.home-container{
+  background: white !important;
+  background-size: cover;
+  color: black;
+  .profile-picture{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .btn-success{
+    float:right;
+    margin-top:10px;
+    margin-bottom: 10px;
+    background: none;
+    color:darkorange;
+    border: 1px darkorange solid;
+  }
+  .btn-order{
+    color:yellow;
+  }
+  .form{
+    background: none;
+  }
+  .modal {
+    display:none;
+    position: fixed;
+    z-index:1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+  }
+
+  /* Modal Content/Box */
+  .modal-content {
+   background:#888;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    color: white;
+    border-radius: 0;
+    h2{
+      font-weight: bold;
+    }
+    form{
+      margin: 10px 20px 0 20px;
+      .form-control{
+        background:none;
+        color: white;
+        border: 2px solid white;
+      }
+
+    }
+  }
+
+  /* The Close Button */
+  .close {
+    color:white;
+    margin-left: 500px;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  /* Close button on hover */
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  .btn-order{
+    margin: 20px 0 20px 0;
+    color: white;
+    background:orange;
+    padding: 10px 50px 10px 50px;
+  }
+}
+.footer-element{
+  background:black;
+  height: 100px;
+h6{
+  color: orange;
+  padding-top: 30px;
+  text-align: center;
+}
+}
+/* the table styling */
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 13px;
+  margin-top: 30px;
+  overflow-x:auto;
+  margin-bottom: 40px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  /* Add a bottom border to the  table rows */
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+/* modal boxes */
+/* The Modal background */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
