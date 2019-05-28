@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginComponent should display the module box 1`] = `ShallowWrapper {}`;
+
+exports[`LoginComponent should render without fail 1`] = `ShallowWrapper {}`;
