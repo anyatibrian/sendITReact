@@ -8,12 +8,6 @@ module.exports = {
     filename: "index_bundle.js",
     publicPath: "/"
   },
-  devServer: {
-    compress: true,
-    historyApiFallback: true,
-    port: 2000,
-    hot: true
-  },
   module: {
     rules: [
       {
