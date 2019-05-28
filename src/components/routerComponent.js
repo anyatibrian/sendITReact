@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import LoginContainer from "../containers/loginContainer";
-import NavbarComponent from "../components/navbarComponent";
 import RegisterContainer from "../containers/registerContainer";
+import NavbarComponent from "../components/navbarComponent";
+import HomeContainer from "../containers/homeContainer";
+
 class RouterComponent extends Component {
   constructor(props) {
     super(props);
@@ -13,7 +15,8 @@ class RouterComponent extends Component {
         <NavbarComponent/>
         <Switch>
           <Route path="/login" component={LoginContainer}/>
-          <Route path="/register" component={RegisterContainer}/>
+          <Route path="/register" component={RegisterContainer} />
+          <Route palth="/" component={HomeContainer} exact={true} />
         </Switch>
       </BrowserRouter>
     );
