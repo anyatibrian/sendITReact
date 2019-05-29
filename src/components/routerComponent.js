@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import LoginContainer from "../containers/loginContainer";
+import ProtectedRoute from "./protectedRoutes/index";
 import RegisterContainer from "../containers/registerContainer";
-import NavbarComponent from "../components/navbarComponent";
 import HomeContainer from "../containers/homeContainer";
 
 class RouterComponent extends Component {
@@ -12,11 +12,10 @@ class RouterComponent extends Component {
   render() {
     return (
       <BrowserRouter>
-        <NavbarComponent/>
         <Switch>
           <Route path="/login" component={LoginContainer}/>
           <Route path="/register" component={RegisterContainer} />
-          <Route palth="/" component={HomeContainer} exact={true} />
+          <ProtectedRoute palth="/" component={HomeContainer} exact={true} />
         </Switch>
       </BrowserRouter>
     );

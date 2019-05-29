@@ -21,6 +21,7 @@ export const LoginComponent = (props) => {
                   type="text"
                   className="form-control"
                   id="username"
+                  required
                   name="username"
                   placeholder="username"
                   value={username}
@@ -32,6 +33,7 @@ export const LoginComponent = (props) => {
                   type="password"
                   className="form-control"
                   id="password"
+                  required
                   name="password"
                   placeholder="password"
                   value={password}

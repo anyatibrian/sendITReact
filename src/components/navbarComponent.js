@@ -6,11 +6,17 @@ class NavbarComponent extends Component {
   constructor(props) {
     super(props);
   }
+  logout = () => {
+    let {history} = this.props;
+    sessionStorage.clear();
+    history.push("/login");
+
+  };
   render() {
     const {isLoggedIn} = this.props;
     return (
         <div>
-          {isLoggedIn? <div className="home-container">
+           <div className="home-container">
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
               <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="nav navbar-nav ml-auto">
@@ -18,12 +24,12 @@ class NavbarComponent extends Component {
                     <img src={LOGO} className="profile-picture"/>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#">logout</a>
+                    <a className="nav-link" href="#" onClick={this.logout}>logout</a>
                   </li>
                 </ul>
               </div>
             </nav>
-          </div>:""}
+          </div>
         </div>
 
     );

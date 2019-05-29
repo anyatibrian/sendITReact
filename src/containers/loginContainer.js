@@ -15,7 +15,7 @@ export class LoginContainer extends Component {
   componentWillReceiveProps(nextProps) {
     if(nextProps.loginRedirect===true){
       const {history} = this.props;
-      history.push("/")
+      history.push("/");
     }
   }
 

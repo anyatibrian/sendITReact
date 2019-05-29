@@ -43,6 +43,7 @@ export const  HomeComponent=(props)=>{
                                 type="text"
                                 className="form-control"
                                 name="receiversName"
+                                required
                                 value={receiversName}
                                 onChange={onChange}
                             />
@@ -52,6 +53,7 @@ export const  HomeComponent=(props)=>{
                             <textarea
                                 className="form-control"
                                 name="description"
+                                required
                                 value={description}
                                 onChange={onChange}
                             >
@@ -63,6 +65,7 @@ export const  HomeComponent=(props)=>{
                                 type="text"
                                 className="form-control"
                                 name="pickup"
+                                required
                                 value={pickup}
                                 onChange={onChange}
                             />
@@ -73,6 +76,7 @@ export const  HomeComponent=(props)=>{
                                 type="text"
                                 className="form-control"
                                 name="destination"
+                                required
                                 value={destination}
                                 onChange={onChange}
                             />
@@ -83,6 +87,7 @@ export const  HomeComponent=(props)=>{
                                 type="number"
                                 className="form-control"
                                 name="weight"
+                                required
                                 value={weight}
                                 onChange={onChange}
                             />

@@ -36,6 +36,8 @@ export const loginUser = data =>async dispatch=>{
     type:IS_LOADING
   });
   return await axios.post(`https://sendit14.herokuapp.com/api/v1/auth/login`, data).then(response=>{
+    console.log("token", response.data['access-token']);
+    sessionStorage.setItem('token',response.data['access-token']);
     dispatch({
       type:LOGIN_SUCCESS,
       payload:response.data
