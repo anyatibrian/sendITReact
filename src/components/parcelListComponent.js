@@ -27,7 +27,7 @@ export const  ParcelListComponent =(props)=>{
           <div className="row userAdmin-dashboard-content">
             <div className="col col-lg-1">
             </div>
-            <div className="col col-lg-10">
+            <div className="col col-lg-10 col-md-10">
               <table id="myTable">
                 <tr className="header">
                   <th style={{width:"10%"}}>Serial No.</th>

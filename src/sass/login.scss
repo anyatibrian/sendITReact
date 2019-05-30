@@ -66,3 +66,41 @@ body {
     width: 0;
   }
 }
+@media (max-width:768px) {
+form{
+  margin-top: 10px !important;
+  padding: 50px 10px 50px 10px;
+  background: lightseagreen;
+  margin-bottom: 10%;
+}
+}
+@media(max-width: 414px){
+.col-md-5{
+  display: none;
+}
+  .col-md-1{
+    display: none;
+  }
+  .col-lg-1{
+    display: none;
+  }
+  .form{
+    margin:0 30px 30px 30px;
+  }
+}
+@media (max-width:800px) {
+  form{
+    margin-top: 10px !important;
+    padding: 50px 10px 50px 10px;
+    background: lightseagreen;
+    margin-bottom: 10%;
+  }
+}
+@media (max-width:800px) {
+  .form{
+    margin-top: 10px !important;
+    padding: 50px 30px 50px 30px;
+    background: lightseagreen;
+    margin-bottom: 10%;
+  }
+}

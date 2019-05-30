@@ -15,8 +15,8 @@ const RegisterComponent = props => {
   } = props;
   return (
     <div className="row mt-5">
-      <div className="col col-lg-6 col-md-6" />
-      <div className="col col-lg-5 col-md-3">
+      <div className="col col-lg-6 col-md-5" />
+      <div className="col col-lg-3 col-md-6">
         <div className="">
           <form onSubmit={onSubmit} className="form">
             <h2 className="header-login"> Register </h2>
@@ -99,7 +99,7 @@ const RegisterComponent = props => {
           </form>
         </div>
       </div>
-      <div className="col col-lg-1 col-md-1" />
+      <div className="col col-lg-1" />
     </div>
   );
 };
