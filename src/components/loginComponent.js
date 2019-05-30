@@ -11,8 +11,8 @@ export const LoginComponent = (props) => {
   return (
     <div className="login-container">
       <div className="row mt-5">
-        <div className="col col-lg-6 col-md-6" />
-        <div className="col col-lg-5 col-md-3">
+        <div className="col col-lg-6 col-md-5" />
+        <div className="col col-lg-5 col-md-6 col-sm-12">
           <div className="">
             <form method="POST" onSubmit={handleSubmit} className="form">
               <h2 className="header-login"> Login </h2>
