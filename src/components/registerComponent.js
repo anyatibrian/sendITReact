@@ -92,7 +92,7 @@ const RegisterComponent = props => {
               value={isLoading?"loading....":"register"}
             />
             <p className="">
-              <Link to="/login" id="Link">
+              <Link to="/" id="Link">
                 Already have an account ,login
               </Link>
             </p>

@@ -3,6 +3,7 @@ import {connect} from "react-redux";
 import {createParcel} from "../actions/createParcelActions";
 import {fetchParcelOrder} from "../actions/fetchParcelActions";
 import "../sass/home.scss";
+import NavbarComponent from "../components/navbarComponent";
 import HomeComponent from "../components/homeComponent";
 import ParcelListComponent from "../components/parcelListComponent";
 import FooterComponent from "../components/footerComponent";
@@ -54,6 +55,9 @@ export class HomeContainer extends Component{
 
     };
     createParcel(data);
+    fetchParcelOrder();
+    this.setState({display:"none"});
+
   };
   render() {
     const {
@@ -65,9 +69,10 @@ export class HomeContainer extends Component{
       weight
     } = this.state;
     const {parcelOrder} = this.props;
-    console.log(parcelOrder);
+
     return (
         <div>
+          <NavbarComponent/>
           <HomeComponent
               toggleButton={this.toggleButton}
               display={display}
