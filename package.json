@@ -27,7 +27,7 @@
     "enzyme-adapter-react-16": "^1.12.1",
     "express": "^4.17.1",
     "file-loader": "^3.0.1",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "moxios": "^0.4.0",
     "prettier": "^1.17.0",
     "prop-types": "^15.7.2",
